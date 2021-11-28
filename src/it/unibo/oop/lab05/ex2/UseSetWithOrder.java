@@ -12,27 +12,26 @@ public final class UseSetWithOrder {
     }
 
     /**
-     * @param args
-     *            ignored
+     * @param args ignored
      */
     public static void main(final String[] args) {
         /*
          * Write a program which:
          * 
-         * 1) Creates a new ORDERED TreeSet of Strings. To order the set, define
-         * a new Comparator in a separate class.
+         * 1) Creates a new ORDERED TreeSet of Strings. To order the set, define a new
+         * Comparator in a separate class.
          * 
-         * 2) Inserts in the set a hundred strings containing randomly generated
-         * numbers (use Math.random())
+         * 2) Inserts in the set a hundred strings containing randomly generated numbers
+         * (use Math.random())
          * 
          * 3) Prints the set, which must be ordered
          */
-    	Set<String> treeSet = new TreeSet<>(new SetComparator());
-    	for (int i = 0; i < 100; i++) {
-    		int n = (int) (Math.random() * 100 + 1);
-    		treeSet.add(n + "");
-    	}
-    	
-    	System.out.println(treeSet);
+        Set<String> treeSet = new TreeSet<>(new SetComparator());
+        for (int i = 0; i < 100; i++) {
+            int n = (int) (Math.random() * 100 + 1);
+            treeSet.add(Integer.toString(n));
+        }
+
+        System.out.println(treeSet);
     }
 }
