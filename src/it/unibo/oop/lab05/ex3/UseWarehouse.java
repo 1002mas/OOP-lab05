@@ -10,25 +10,24 @@ public final class UseWarehouse {
     }
 
     /**
-     * @param args
-     *            unused
+     * @param args unused
      */
     public static void main(final String[] args) {
         /*
          * Realize the classes:
          *
-         * 1) WarehouseImpl implements Warehouse. Such class should use internally
-         * a java.util.LinkedHashSet. Differently from HashSet the iteration order
-         * of LinkedHashSet is predictable and reproducible even when using object
-         * that don't implement a custom hashCode.
-         * Additionally, LinkedHashSet and HashSet have similar performances:
+         * 1) WarehouseImpl implements Warehouse. Such class should use internally a
+         * java.util.LinkedHashSet. Differently from HashSet the iteration order of
+         * LinkedHashSet is predictable and reproducible even when using object that
+         * don't implement a custom hashCode. Additionally, LinkedHashSet and HashSet
+         * have similar performances:
          * https://www.artima.com/weblogs/viewpost.jsp?thread=122295
          *
-         * 2) ProductImpl implements Product. Remember that two products are the
-         * same if their name is the same.
+         * 2) ProductImpl implements Product. Remember that two products are the same if
+         * their name is the same.
          *
-         * Read VERY carefully the comments in the implemented interfaces and use
-         * them to run the test.
+         * Read VERY carefully the comments in the implemented interfaces and use them
+         * to run the test.
          */
 
         final Product p1 = new ProductImpl("p1", 10);
